@@ -3,7 +3,7 @@ import pyxel
 pyxel.init(256, 256)
 
 # game state:
-playerPos = [0, 0] # x, y
+playerPos = [128, 128] # x, y
 pyxel.load("rock.pyxres")
 pyxel.playm(0, loop=True)
 
@@ -21,8 +21,7 @@ def update():
 
 def draw():
     pyxel.cls(0)
-    pyxel.rect(playerPos[0],playerPos[1],20,20,11)
-    pyxel.blt(0, 0, 0, 0, 0, 16, 16)
+    pyxel.blt(playerPos[0],playerPos[1], 0, 0, 0, 16, 48)
     pyxel.blt(16, 0, 0, 16, 0, 16, 16)
 
 pyxel.run(update, draw)
