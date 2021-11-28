@@ -8,14 +8,14 @@ pyxel.load("rock.pyxres")
 pyxel.playm(0, loop=True)
 
 def update():
-    if pyxel.btnp(pyxel.KEY_S) and playerPos[1] <= 256:
-        playerPos[1] += 1
-    if pyxel.btnp(pyxel.KEY_W) and playerPos[1] >= 0:
-        playerPos[1] -= 1
-    if pyxel.btnp(pyxel.KEY_A) and playerPos[0] >= 0:
-        playerPos[0] -= 1
-    if pyxel.btnp(pyxel.KEY_D) and playerPos[0] <= 256:
-        playerPos[0] += 1
+    if pyxel.btn(pyxel.KEY_S) and playerPos[1] <= 256:
+        playerPos[1] += 2
+    if pyxel.btn(pyxel.KEY_W) and playerPos[1] >= 0:
+        playerPos[1] -= 2
+    if pyxel.btn(pyxel.KEY_A) and playerPos[0] >= 0:
+        playerPos[0] -= 2
+    if pyxel.btn(pyxel.KEY_D) and playerPos[0] <= 256:
+        playerPos[0] += 2
     if pyxel.btnp(pyxel.KEY_Q):
         pyxel.quit()
 
