@@ -5,6 +5,7 @@ pyxel.init(256, 256)
 # game state:
 playerPos = [0, 0] # x, y
 pyxel.load("rock.pyxres")
+pyxel.playm(0, loop=True)
 
 def update():
     if pyxel.btnp(pyxel.KEY_S) and playerPos[1] <= 256:
