@@ -22,5 +22,6 @@ def draw():
     pyxel.cls(0)
     pyxel.rect(playerPos[0],playerPos[1],20,20,11)
     pyxel.blt(0, 0, 0, 0, 0, 16, 16)
+    pyxel.blt(16, 0, 0, 16, 0, 16, 16)
 
 pyxel.run(update, draw)
