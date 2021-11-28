@@ -7,8 +7,8 @@ import pyxel
 SCREEN_WIDTH = 256
 SCREEN_HEIGHT = 256
 
-METEOR_MAX_SPEED = 0.1
-METEOR_INITIAL_COUNT = 10
+METEOR_MAX_SPEED = 1
+METEOR_INITIAL_COUNT = 20
 
 
 class Vec2:
@@ -33,6 +33,21 @@ class Meteor:
     def update(self):
         self.pos.x += self.vel.x
         self.pos.y += self.vel.y
+        # when a rock exits the screen, another rock is added
+        if self.pos.x > 255 or self.pos.y > 255:
+            if random.uniform(0, 10) > 5:
+                self.pos.x = random.uniform(0, 255)
+                self.pos.y = 0
+            else:
+                self.pos.y = random.uniform(0, 255)
+                self.pos.x = 0
+        if self.pos.x < 0 or self.pos.y < 0:
+            if random.uniform(0, 10) > 5:
+                self.pos.x = random.uniform(0, 255)
+                self.pos.y = 255
+            else:
+                self.pos.y = random.uniform(0, 255)
+                self.pos.x = 255
 
 class game:
     def __init__(self):
