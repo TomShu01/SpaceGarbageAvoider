@@ -1,5 +1,5 @@
 # MeteorAvoider
-![project picture](docs/spaceGarbageAvoider.png)
+![project picture](docs/spaceGarbageAvoider.png | width=400)
 ## Video Demonstration
 [![Alternate Text](docs/video_thumbnail.jpg)](https://www.youtube.com/watch?v=gz_ZsGP7geU "Link Title")
 ## Project Overview
