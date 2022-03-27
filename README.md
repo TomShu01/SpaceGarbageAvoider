@@ -1,5 +1,7 @@
 # MeteorAvoider
-
+![project picture](docs/spaceGarbageAvoider.png)
+## Video Demonstration
+[![Alternate Text](docs/video_thumbnail.jpg)](https://www.youtube.com/watch?v=gz_ZsGP7geU "Link Title")
 ## Project Overview
 SpaceGarbageAvoider is a python pixel game in which you pilot a spaceship to avoid space garbage floating in space
 ## Inspiration
