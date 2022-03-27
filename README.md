@@ -7,7 +7,16 @@ SpaceGarbageAvoider is a python pixel game in which you pilot a spaceship to avo
 ## Inspiration
 As the number of human spaceflight increases rapidly, the amount of space garbage accumulated in space also increases exponentially. SpaceGarbageAvoider is a game that raises awareness to this issue.
 ## What it does
-SpaceGarbageAvoider is a game that involves you, the pilot of a spaceship, controlling your spaceship to avoid space garbage floating in space. You use the AWSD keys to move the spaceship up and down to avoid space garbage moving with a certain velocity. The longer you survive without hitting any space garbage the higher score you get in the end.
+SpaceGarbageAvoider is a game that involves you, the pilot of a spaceship, controlling your spaceship to avoid space garbage floating in space.
+
+You use the **A, W, S, D** keys to move the spaceship up and down to avoid space garbage moving with a certain velocity.
+![MeteorAvoider walking](docs/MeteorAvoider_walking.gif)
+
+The longer you survive without hitting any space garbage the higher score you get in the end.
+![MeteorAvoider score](docs/MeteorAvoider_score.gif)
+
+When the round ends, you can try again by pressing **R**
+![MeteorAvoider restart](docs/MeteorAvoider_restart.gif)
 ## How we built it
 We built this game using the existing Python game engine called Pyxel. We created a meteor class to represent space garbage. We used the Pyxel Editor provided by Pyxel to design all the pixel models used in this game.
 ## Challenges we ran into
